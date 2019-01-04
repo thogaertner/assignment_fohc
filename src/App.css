@@ -1,4 +1,7 @@
-.App {}
+.App [class="x axis"] text{
+  transform: rotate(-90deg);
+  opacity: 0;
+}
 
 @keyframes App-logo-spin {
   from {

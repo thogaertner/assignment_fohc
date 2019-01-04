@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
 import NY from './data/new_york.json'
-import cphComplete from './data/cph_complete.json'
-import nonAdjustedCHS from './data/non_adjusted_CHS.json'
 import { geoMercator, geoPath } from 'd3-geo'
 import District from './District';
 
@@ -12,19 +10,22 @@ const SCALE = 50000;
 class NYMap extends Component {
     state = {
         display: 'OverallPopulation_rate',
+        selected: [],
     }
 
-    data = nonAdjustedCHS
+    data;
     dataByDistricts;
     dataMinMax;
 
     render() {
+        this.data = this.props.data;
+
         const projection = geoMercator()
             .scale(SCALE)
             .center(COORDINATED_NEW_YORK)
-            .translate([this.props.size[0] / 2, this.props.size[1] / 2])
+            .translate([this.props.size[0] / 2, this.props.size[1] / 2]);
 
-        const pathGenerator = geoPath().projection(projection)
+        const pathGenerator = geoPath().projection(projection);
         
         const districtData = this.preprocessData();
         const dataMinMax = this.getDataMinMax();
@@ -36,7 +37,8 @@ class NYMap extends Component {
                     id={i}
                     districtDate={districtDate}
                     display={this.state.display}
-                    dataMinMax={dataMinMax}/>)
+                    dataMinMax={dataMinMax}
+                    triggerSelected={this.props.triggerSelected}/>)
         const dropDown = this.createDropdown()
 
         return <div>

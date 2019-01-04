@@ -20,8 +20,9 @@ class District extends Component {
                 className='districts'
                 fill={this.getColor()} 
                 strokeWidth={this.state.selected ? 3 : 1}
-                onClick={() => { 
+                onClick={() => {
                     this.setState({ selected: !this.state.selected });
+                    this.props.triggerSelected(districtDate.properties.communityDistrict)
                     }}
                 title="test"
             />
