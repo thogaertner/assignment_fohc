@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import cphComplete from './data/cph_complete.json'
 import nonAdjustedCHS from './data/non_adjusted_CHS.json'
-import BarChart from './BarChart';
 import NYMap from './NYMap.jsx';
 import Diagrams from './Diagrams';
+import DropDown from './DropDown';
 
 const DATA = cphComplete.map(cphDistrict => {
   const match = nonAdjustedCHS.find(naCHSDistrict => cphDistrict.ID === naCHSDistrict.ID);
@@ -18,16 +18,21 @@ class App extends Component {
     height: 900,
     id: 'root',
     selected: [],
+    displaySelection: 'OverallPopulation_rate',
   }
 
   render() {
     console.log('render')
     return (
       <div className="App">
+        <DropDown
+          data={DATA}
+          setDisplaySelection={this.setDisplaySelection.bind(this)}/>
         <NYMap
           size={[this.state.width, this.state.height]}
           triggerSelected={this.triggerSelected.bind(this)}
           data={DATA}
+          displaySelection={this.state.displaySelection}
         />
         <Diagrams 
           selected={this.state.selected}
@@ -52,7 +57,11 @@ class App extends Component {
         delete selected[itemIndex];
         this.setState({ selected });
     }
-}
+  }
+
+  setDisplaySelection(displaySelection) {
+    this.setState({ displaySelection })
+  }
 }
 
 export default App;

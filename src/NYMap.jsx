@@ -9,7 +9,6 @@ const SCALE = 50000;
 
 class NYMap extends Component {
     state = {
-        display: 'OverallPopulation_rate',
         selected: [],
     }
 
@@ -19,7 +18,7 @@ class NYMap extends Component {
 
     render() {
         this.data = this.props.data;
-
+        const displaySelection = this.props.displaySelection;
         const projection = geoMercator()
             .scale(SCALE)
             .center(COORDINATED_NEW_YORK)
@@ -36,13 +35,11 @@ class NYMap extends Component {
                     pathGenerator={pathGenerator}
                     id={i}
                     districtDate={districtDate}
-                    display={this.state.display}
+                    display={displaySelection}
                     dataMinMax={dataMinMax}
                     triggerSelected={this.props.triggerSelected}/>)
-        const dropDown = this.createDropdown()
 
         return <div>
-            {dropDown}
             <svg width={this.props.size[0]} height={this.props.size[1]}>
                 {districts}
             </svg>
@@ -86,24 +83,6 @@ class NYMap extends Component {
             })
         })
         return this.dataMinMax;
-    }
-
-    createDropdown() {
-        const dropDownId = "displayDropdown"
-
-        const keys = Object.keys(this.data[0])
-            .filter(key => ['ID', 'Name'].indexOf(key) === -1)
-            .map(key => <option value={key}>{key}</option>)
-
-        const select = <select id="dropDownId"
-            onChange={(event) => {
-                this.setState({ display: document.getElementById("dropDownId").value })
-            }}
-        >
-            {keys}
-        </select>
-
-        return select
     }
 }
 export default NYMap
