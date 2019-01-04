@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import NY from './data/new_york.json'
 import cphComplete from './data/cph_complete.json'
+import nonAdjustedCHS from './data/non_adjusted_CHS.json'
 import { geoMercator, geoPath } from 'd3-geo'
 import District from './District';
 
@@ -13,8 +14,9 @@ class NYMap extends Component {
         display: 'OverallPopulation_rate',
     }
 
+    data = nonAdjustedCHS
     dataByDistricts;
-    cphCompleteMinMax;
+    dataMinMax;
 
     render() {
         const projection = geoMercator()
@@ -25,7 +27,7 @@ class NYMap extends Component {
         const pathGenerator = geoPath().projection(projection)
         
         const districtData = this.preprocessData();
-        const cphCompleteMinMax = this.getCphCompleteMinMax();
+        const dataMinMax = this.getDataMinMax();
 
         const districts = districtData
             .map((districtDate, i) =>
@@ -34,7 +36,7 @@ class NYMap extends Component {
                     id={i}
                     districtDate={districtDate}
                     display={this.state.display}
-                    cphCompleteMinMax={cphCompleteMinMax}/>)
+                    dataMinMax={dataMinMax}/>)
         const dropDown = this.createDropdown()
 
         return <div>
@@ -49,7 +51,7 @@ class NYMap extends Component {
         if (this.dataByDistricts) return this.dataByDistricts;
 
         this.dataByDistricts = NY.features.map(mapFeature => {
-            mapFeature.properties.cphComplete = cphComplete.find(date => date.ID === mapFeature.properties.communityDistrict)
+            mapFeature.properties.data = this.data.find(date => date.ID === mapFeature.properties.communityDistrict)
             return mapFeature;
         })
 
@@ -59,35 +61,35 @@ class NYMap extends Component {
     /**
      * creates an Object with the min/max values
      */
-    getCphCompleteMinMax() {
-        if (this.cphCompleteMinMax) return this.cphCompleteMinMax;
+    getDataMinMax() {
+        if (this.dataMinMax) return this.dataMinMax;
 
-        this.cphCompleteMinMax = {};
-        cphComplete.forEach(district => {
+        this.dataMinMax = {};
+        this.data.forEach(district => {
             Object.keys(district).forEach(key => {
                 const value = district[key];
                 if (typeof value !== "number") return;
-                if (!this.cphCompleteMinMax[key]) {
-                    this.cphCompleteMinMax[key] = {}
-                    this.cphCompleteMinMax[key].min = value;
-                    this.cphCompleteMinMax[key].max = value;
+                if (!this.dataMinMax[key]) {
+                    this.dataMinMax[key] = {}
+                    this.dataMinMax[key].min = value;
+                    this.dataMinMax[key].max = value;
                     return
                 }
-                if (value < this.cphCompleteMinMax[key].min) {
-                    this.cphCompleteMinMax[key].min = value;                  
+                if (value < this.dataMinMax[key].min) {
+                    this.dataMinMax[key].min = value;                  
                 }
-                if (value > this.cphCompleteMinMax[key].max) {
-                    this.cphCompleteMinMax[key].max = value;                    
+                if (value > this.dataMinMax[key].max) {
+                    this.dataMinMax[key].max = value;                    
                 }
             })
         })
-        return this.cphCompleteMinMax;
+        return this.dataMinMax;
     }
 
     createDropdown() {
         const dropDownId = "displayDropdown"
 
-        const keys = Object.keys(cphComplete[0])
+        const keys = Object.keys(this.data[0])
             .filter(key => ['ID', 'Name'].indexOf(key) === -1)
             .map(key => <option value={key}>{key}</option>)
 

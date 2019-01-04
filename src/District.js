@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { rgba } from 'polished';
 import './App.css'
-import data from './data/cph_complete.json'
 
 
 class District extends Component {
@@ -31,16 +30,16 @@ class District extends Component {
     getColor() {
         const districtDate = this.props.districtDate;
         const display = this.props.display;
-        const cphCompleteMinMax = this.props.cphCompleteMinMax;
+        const dataMinMax = this.props.dataMinMax;
 
         if (districtDate.properties && 
-                districtDate.properties.cphComplete &&
-                districtDate.properties.cphComplete[display] &&
-                typeof districtDate.properties.cphComplete[display] === 'number'
+                districtDate.properties.data &&
+                districtDate.properties.data[display] &&
+                typeof districtDate.properties.data[display] === 'number'
             ) {
                 return rgba(0, 0, 255, 
-                    (districtDate.properties.cphComplete[display] - cphCompleteMinMax[display].min)/
-                    (cphCompleteMinMax[display].max - cphCompleteMinMax[display].min));
+                    (districtDate.properties.data[display] - dataMinMax[display].min)/
+                    (dataMinMax[display].max - dataMinMax[display].min));
             } else {
                 return "gray";
             }
