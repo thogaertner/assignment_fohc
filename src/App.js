@@ -2,20 +2,19 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BarChart from './BarChart';
-import NYMap from './NYMap';
+import NYMap from './NYMap.jsx';
 
 class App extends Component {
   state = {
-    data: [12, 5, 6, 6, 9, 10],
-    width: 700,
-    height: 500,
+    width: 900,
+    height: 900,
     id: 'root'
   }
 
   render() {
     return (
       <div className="App">
-        <NYMap size={[500,500]}/>
+        <NYMap size={[this.state.width, this.state.height]}/>
       </div>
     );
   }
