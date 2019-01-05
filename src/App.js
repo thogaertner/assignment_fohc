@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import './App.css';
 import cphComplete from './data/cph_complete.json'
 import nonAdjustedCHS from './data/non_adjusted_CHS.json'
@@ -25,19 +26,30 @@ class App extends Component {
     console.log('render')
     return (
       <div className="App">
-        <DropDown
-          data={DATA}
-          setDisplaySelection={this.setDisplaySelection.bind(this)}/>
-        <NYMap
-          size={[this.state.width, this.state.height]}
-          triggerSelected={this.triggerSelected.bind(this)}
-          data={DATA}
-          displaySelection={this.state.displaySelection}
-        />
-        <Diagrams 
-          selected={this.state.selected}
-          data={DATA}
-        />
+        <Grid>
+          <Row>
+            <Col md={6} mdOffset={6}>
+              <DropDown
+                data={DATA}
+                setDisplaySelection={this.setDisplaySelection.bind(this)}/>
+            </Col>
+          </Row> 
+          <Row>            
+            <Col md={12}>
+            <NYMap
+              size={[this.state.width, this.state.height]}
+              triggerSelected={this.triggerSelected.bind(this)}
+              data={DATA}
+              displaySelection={this.state.displaySelection}/>
+            </Col>
+          </Row>
+          <Row>         
+            <Diagrams 
+              selected={this.state.selected}
+              displaySelection={this.state.displaySelection}
+              data={DATA}/>
+          </Row>
+        </Grid>
       </div>
     );
   }
