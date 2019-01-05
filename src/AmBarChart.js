@@ -7,7 +7,7 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 am4core.useTheme(am4themes_animated);
 
-class AmBarChat extends Component {
+class AmBarChart extends Component {
   componentDidMount() {
     let chart = am4core.create("chartdiv", am4charts.XYChart);
 
@@ -59,4 +59,4 @@ class AmBarChat extends Component {
   }
 }
 
-export default AmBarChat;
+export default AmBarChart;

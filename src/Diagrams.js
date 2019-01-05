@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import HousingDefectDiagram from './HousingDefectDiagram';
-import AmBarChart from './BarChart';
+import AmBarChart from './AmBarChart'
 
 
 class Diagrams extends Component {
@@ -10,9 +10,12 @@ class Diagrams extends Component {
         const selected = this.props.selected;
         const displaySelection = this.props.displaySelection;
         return <div>
-            <AmBarChart
+            <HousingDefectDiagram
                 data={data}
                 selected={selected}/>
+            {/*<AmBarChart
+                data={data}
+            selected={selected}/>*/}
         </div>
     }
 }
