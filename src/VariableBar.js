@@ -25,6 +25,8 @@ class VariableBar extends Component {
             <BarChart 
                 axes
                 grid
+                height={200}
+                width={400}
                 y2Type={'linear'}
                 data={coloredData}/>
             </div>
