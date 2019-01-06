@@ -22,8 +22,7 @@
     "react-d3-map": "^0.8.3",
     "react-dom": "^16.7.0",
     "react-easy-chart": "^1.0.0",
-    "react-scripts": "2.1.2",
-    "react-tooltip": "^3.9.2"
+    "react-scripts": "2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/tommysft/assignment_fohc/issues"
   },
-  "homepage": "https://github.com/tommysft/assignment_fohc#readme"
+  "homepage": "https://github.com/"
 }

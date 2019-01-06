@@ -572,8 +572,7 @@
     "Premature_Mort": 145.4,
     "Premature_mort_rank": 39,
     "Life_expectancy_rate": 82.9,
-    "Life_expectancy_rank": 15,
-    "": ""
+    "Life_expectancy_rank": 15
   },
   {
     "ID": 106,
@@ -688,8 +687,7 @@
     "Premature_Mort": 98.5,
     "Premature_mort_rank": 55,
     "Life_expectancy_rate": 85.3,
-    "Life_expectancy_rank": 2,
-    "": ""
+    "Life_expectancy_rank": 2
   },
   {
     "ID": 107,
@@ -804,8 +802,7 @@
     "Premature_Mort": 116.8,
     "Premature_mort_rank": 51,
     "Life_expectancy_rate": 83.8,
-    "Life_expectancy_rank": 9,
-    "": ""
+    "Life_expectancy_rank": 9
   },
   {
     "ID": 108,
@@ -920,8 +917,7 @@
     "Premature_Mort": 97.4,
     "Premature_mort_rank": 56,
     "Life_expectancy_rate": 85.0,
-    "Life_expectancy_rank": 3,
-    "": ""
+    "Life_expectancy_rank": 3
   },
   {
     "ID": 109,
@@ -1036,8 +1032,7 @@
     "Premature_Mort": 179.0,
     "Premature_mort_rank": 28,
     "Life_expectancy_rate": 80.2,
-    "Life_expectancy_rank": 36,
-    "": ""
+    "Life_expectancy_rank": 36
   },
   {
     "ID": 110,
@@ -1152,8 +1147,7 @@
     "Premature_Mort": 293.1,
     "Premature_mort_rank": 7,
     "Life_expectancy_rate": 75.1,
-    "Life_expectancy_rank": 57,
-    "": ""
+    "Life_expectancy_rank": 57
   },
   {
     "ID": 111,
@@ -1268,8 +1262,7 @@
     "Premature_Mort": 301.0,
     "Premature_mort_rank": 5,
     "Life_expectancy_rate": 76.0,
-    "Life_expectancy_rank": 54,
-    "": ""
+    "Life_expectancy_rank": 54
   },
   {
     "ID": 112,
@@ -1384,8 +1377,7 @@
     "Premature_Mort": 139.2,
     "Premature_mort_rank": 44,
     "Life_expectancy_rate": 83.2,
-    "Life_expectancy_rank": 14,
-    "": ""
+    "Life_expectancy_rank": 14
   },
   {
     "ID": 201,
@@ -1500,8 +1492,7 @@
     "Premature_Mort": 305.7,
     "Premature_mort_rank": 4,
     "Life_expectancy_rate": 76.1,
-    "Life_expectancy_rank": 53,
-    "": ""
+    "Life_expectancy_rank": 53
   },
   {
     "ID": 202,
@@ -1616,8 +1607,7 @@
     "Premature_Mort": 266.8,
     "Premature_mort_rank": 10,
     "Life_expectancy_rate": 77.6,
-    "Life_expectancy_rank": 49,
-    "": ""
+    "Life_expectancy_rank": 49
   },
   {
     "ID": 203,
@@ -1732,8 +1722,7 @@
     "Premature_Mort": 346.3,
     "Premature_mort_rank": 2,
     "Life_expectancy_rate": 75.3,
-    "Life_expectancy_rank": 56,
-    "": ""
+    "Life_expectancy_rank": 56
   },
   {
     "ID": 204,
@@ -1848,8 +1837,7 @@
     "Premature_Mort": 265.7,
     "Premature_mort_rank": 12,
     "Life_expectancy_rate": 77.0,
-    "Life_expectancy_rank": 51,
-    "": ""
+    "Life_expectancy_rank": 51
   },
   {
     "ID": 205,
@@ -1964,8 +1952,7 @@
     "Premature_Mort": 266.2,
     "Premature_mort_rank": 11,
     "Life_expectancy_rate": 78.9,
-    "Life_expectancy_rank": 43,
-    "": ""
+    "Life_expectancy_rank": 43
   },
   {
     "ID": 206,
@@ -2080,8 +2067,7 @@
     "Premature_Mort": 297.5,
     "Premature_mort_rank": 6,
     "Life_expectancy_rate": 76.7,
-    "Life_expectancy_rank": 52,
-    "": ""
+    "Life_expectancy_rank": 52
   },
   {
     "ID": 207,
@@ -2196,8 +2182,7 @@
     "Premature_Mort": 220.0,
     "Premature_mort_rank": 16,
     "Life_expectancy_rate": 78.7,
-    "Life_expectancy_rank": 45,
-    "": ""
+    "Life_expectancy_rank": 45
   },
   {
     "ID": 208,
@@ -2312,8 +2297,7 @@
     "Premature_Mort": 165.9,
     "Premature_mort_rank": 32,
     "Life_expectancy_rate": 80.5,
-    "Life_expectancy_rank": 31,
-    "": ""
+    "Life_expectancy_rank": 31
   },
   {
     "ID": 209,
@@ -2428,8 +2412,7 @@
     "Premature_Mort": 230.7,
     "Premature_mort_rank": 14,
     "Life_expectancy_rate": 78.7,
-    "Life_expectancy_rank": 46,
-    "": ""
+    "Life_expectancy_rank": 46
   },
   {
     "ID": 210,
@@ -2544,8 +2527,7 @@
     "Premature_Mort": 196.4,
     "Premature_mort_rank": 25,
     "Life_expectancy_rate": 80.5,
-    "Life_expectancy_rank": 32,
-    "": ""
+    "Life_expectancy_rank": 32
   },
   {
     "ID": 211,
@@ -2660,8 +2642,7 @@
     "Premature_Mort": 210.2,
     "Premature_mort_rank": 19,
     "Life_expectancy_rate": 79.1,
-    "Life_expectancy_rank": 42,
-    "": ""
+    "Life_expectancy_rank": 42
   },
   {
     "ID": 212,
@@ -2776,8 +2757,7 @@
     "Premature_Mort": 207.4,
     "Premature_mort_rank": 21,
     "Life_expectancy_rate": 80.2,
-    "Life_expectancy_rank": 37,
-    "": ""
+    "Life_expectancy_rank": 37
   },
   {
     "ID": 301,
@@ -2892,8 +2872,7 @@
     "Premature_Mort": 194.1,
     "Premature_mort_rank": 26,
     "Life_expectancy_rate": 80.2,
-    "Life_expectancy_rank": 35,
-    "": ""
+    "Life_expectancy_rank": 35
   },
   {
     "ID": 302,
@@ -3008,8 +2987,7 @@
     "Premature_Mort": 208.8,
     "Premature_mort_rank": 20,
     "Life_expectancy_rate": 79.4,
-    "Life_expectancy_rank": 41,
-    "": ""
+    "Life_expectancy_rank": 41
   },
   {
     "ID": 303,
@@ -3124,8 +3102,7 @@
     "Premature_Mort": 309.2,
     "Premature_mort_rank": 3,
     "Life_expectancy_rate": 75.1,
-    "Life_expectancy_rank": 58,
-    "": ""
+    "Life_expectancy_rank": 58
   },
   {
     "ID": 304,
@@ -3240,8 +3217,7 @@
     "Premature_Mort": 220.0,
     "Premature_mort_rank": 16,
     "Life_expectancy_rate": 78.8,
-    "Life_expectancy_rank": 44,
-    "": ""
+    "Life_expectancy_rank": 44
   },
   {
     "ID": 305,
@@ -3356,8 +3332,7 @@
     "Premature_Mort": 279.4,
     "Premature_mort_rank": 9,
     "Life_expectancy_rate": 77.7,
-    "Life_expectancy_rank": 48,
-    "": ""
+    "Life_expectancy_rank": 48
   },
   {
     "ID": 306,
@@ -3472,8 +3447,7 @@
     "Premature_Mort": 148.2,
     "Premature_mort_rank": 38,
     "Life_expectancy_rate": 80.3,
-    "Life_expectancy_rank": 34,
-    "": ""
+    "Life_expectancy_rank": 34
   },
   {
     "ID": 307,
@@ -3588,8 +3562,7 @@
     "Premature_Mort": 148.6,
     "Premature_mort_rank": 37,
     "Life_expectancy_rate": 81.6,
-    "Life_expectancy_rank": 23,
-    "": ""
+    "Life_expectancy_rank": 23
   },
   {
     "ID": 308,
@@ -3704,8 +3677,7 @@
     "Premature_Mort": 246.9,
     "Premature_mort_rank": 13,
     "Life_expectancy_rate": 77.5,
-    "Life_expectancy_rank": 50,
-    "": ""
+    "Life_expectancy_rank": 50
   },
   {
     "ID": 309,
@@ -3820,8 +3792,7 @@
     "Premature_Mort": 205.2,
     "Premature_mort_rank": 22,
     "Life_expectancy_rate": 80.0,
-    "Life_expectancy_rank": 38,
-    "": ""
+    "Life_expectancy_rank": 38
   },
   {
     "ID": 310,
@@ -3936,8 +3907,7 @@
     "Premature_Mort": 144.8,
     "Premature_mort_rank": 40,
     "Life_expectancy_rate": 81.5,
-    "Life_expectancy_rank": 25,
-    "": ""
+    "Life_expectancy_rank": 25
   },
   {
     "ID": 311,
@@ -4052,8 +4022,7 @@
     "Premature_Mort": 137.8,
     "Premature_mort_rank": 45,
     "Life_expectancy_rate": 82.5,
-    "Life_expectancy_rank": 17,
-    "": ""
+    "Life_expectancy_rank": 17
   },
   {
     "ID": 312,
@@ -4168,8 +4137,7 @@
     "Premature_Mort": 131.6,
     "Premature_mort_rank": 46,
     "Life_expectancy_rate": 83.5,
-    "Life_expectancy_rank": 12,
-    "": ""
+    "Life_expectancy_rank": 12
   },
   {
     "ID": 313,
@@ -4284,8 +4252,7 @@
     "Premature_Mort": 218.8,
     "Premature_mort_rank": 18,
     "Life_expectancy_rate": 79.7,
-    "Life_expectancy_rank": 39,
-    "": ""
+    "Life_expectancy_rank": 39
   },
   {
     "ID": 314,
@@ -4400,8 +4367,7 @@
     "Premature_Mort": 178.5,
     "Premature_mort_rank": 29,
     "Life_expectancy_rate": 81.5,
-    "Life_expectancy_rank": 24,
-    "": ""
+    "Life_expectancy_rank": 24
   },
   {
     "ID": 315,
@@ -4516,8 +4482,7 @@
     "Premature_Mort": 148.7,
     "Premature_mort_rank": 36,
     "Life_expectancy_rate": 82.5,
-    "Life_expectancy_rank": 16,
-    "": ""
+    "Life_expectancy_rank": 16
   },
   {
     "ID": 316,
@@ -4632,8 +4597,7 @@
     "Premature_Mort": 367.1,
     "Premature_mort_rank": 1,
     "Life_expectancy_rate": 74.1,
-    "Life_expectancy_rank": 59,
-    "": ""
+    "Life_expectancy_rank": 59
   },
   {
     "ID": 317,
@@ -4748,8 +4712,7 @@
     "Premature_Mort": 204.5,
     "Premature_mort_rank": 23,
     "Life_expectancy_rate": 82.1,
-    "Life_expectancy_rank": 21,
-    "": ""
+    "Life_expectancy_rank": 21
   },
   {
     "ID": 318,
@@ -4864,8 +4827,7 @@
     "Premature_Mort": 168.8,
     "Premature_mort_rank": 31,
     "Life_expectancy_rate": 81.3,
-    "Life_expectancy_rank": 26,
-    "": ""
+    "Life_expectancy_rank": 26
   },
   {
     "ID": 401,
@@ -4980,8 +4942,7 @@
     "Premature_Mort": 144.6,
     "Premature_mort_rank": 42,
     "Life_expectancy_rate": 82.2,
-    "Life_expectancy_rank": 18,
-    "": ""
+    "Life_expectancy_rank": 18
   },
   {
     "ID": 402,
@@ -5096,8 +5057,7 @@
     "Premature_Mort": 114.2,
     "Premature_mort_rank": 52,
     "Life_expectancy_rate": 83.9,
-    "Life_expectancy_rank": 8,
-    "": ""
+    "Life_expectancy_rank": 8
   },
   {
     "ID": 403,
@@ -5212,8 +5172,7 @@
     "Premature_Mort": 120.9,
     "Premature_mort_rank": 48,
     "Life_expectancy_rate": 83.7,
-    "Life_expectancy_rank": 10,
-    "": ""
+    "Life_expectancy_rank": 10
   },
   {
     "ID": 404,
@@ -5328,8 +5287,7 @@
     "Premature_Mort": 107.7,
     "Premature_mort_rank": 53,
     "Life_expectancy_rate": 84.1,
-    "Life_expectancy_rank": 5,
-    "": ""
+    "Life_expectancy_rank": 5
   },
   {
     "ID": 405,
@@ -5444,8 +5402,7 @@
     "Premature_Mort": 155.0,
     "Premature_mort_rank": 34,
     "Life_expectancy_rate": 81.0,
-    "Life_expectancy_rank": 28,
-    "": ""
+    "Life_expectancy_rank": 28
   },
   {
     "ID": 406,
@@ -5560,8 +5517,7 @@
     "Premature_Mort": 103.4,
     "Premature_mort_rank": 54,
     "Life_expectancy_rate": 84.0,
-    "Life_expectancy_rank": 7,
-    "": ""
+    "Life_expectancy_rank": 7
   },
   {
     "ID": 407,
@@ -5676,8 +5632,7 @@
     "Premature_Mort": 118.8,
     "Premature_mort_rank": 49,
     "Life_expectancy_rate": 83.6,
-    "Life_expectancy_rank": 11,
-    "": ""
+    "Life_expectancy_rank": 11
   },
   {
     "ID": 408,
@@ -5792,8 +5747,7 @@
     "Premature_Mort": 128.2,
     "Premature_mort_rank": 47,
     "Life_expectancy_rate": 83.3,
-    "Life_expectancy_rank": 13,
-    "": ""
+    "Life_expectancy_rank": 13
   },
   {
     "ID": 409,
@@ -5908,8 +5862,7 @@
     "Premature_Mort": 144.8,
     "Premature_mort_rank": 40,
     "Life_expectancy_rate": 82.2,
-    "Life_expectancy_rank": 19,
-    "": ""
+    "Life_expectancy_rank": 19
   },
   {
     "ID": 410,
@@ -6024,8 +5977,7 @@
     "Premature_Mort": 157.6,
     "Premature_mort_rank": 33,
     "Life_expectancy_rate": 81.2,
-    "Life_expectancy_rank": 27,
-    "": ""
+    "Life_expectancy_rank": 27
   },
   {
     "ID": 411,
@@ -6140,8 +6092,7 @@
     "Premature_Mort": 84.9,
     "Premature_mort_rank": 58,
     "Life_expectancy_rate": 84.1,
-    "Life_expectancy_rank": 6,
-    "": ""
+    "Life_expectancy_rank": 6
   },
   {
     "ID": 412,
@@ -6256,8 +6207,7 @@
     "Premature_Mort": 200.1,
     "Premature_mort_rank": 24,
     "Life_expectancy_rate": 79.4,
-    "Life_expectancy_rank": 40,
-    "": ""
+    "Life_expectancy_rank": 40
   },
   {
     "ID": 413,
@@ -6372,8 +6322,7 @@
     "Premature_Mort": 118.6,
     "Premature_mort_rank": 50,
     "Life_expectancy_rate": 82.2,
-    "Life_expectancy_rank": 20,
-    "": ""
+    "Life_expectancy_rank": 20
   },
   {
     "ID": 414,
@@ -6488,8 +6437,7 @@
     "Premature_Mort": 279.7,
     "Premature_mort_rank": 8,
     "Life_expectancy_rate": 75.9,
-    "Life_expectancy_rank": 55,
-    "": ""
+    "Life_expectancy_rank": 55
   },
   {
     "ID": 501,
@@ -6604,8 +6552,7 @@
     "Premature_Mort": 226.5,
     "Premature_mort_rank": 15,
     "Life_expectancy_rate": 78.2,
-    "Life_expectancy_rank": 47,
-    "": ""
+    "Life_expectancy_rank": 47
   },
   {
     "ID": 502,
@@ -6720,8 +6667,7 @@
     "Premature_Mort": 171.7,
     "Premature_mort_rank": 30,
     "Life_expectancy_rate": 80.3,
-    "Life_expectancy_rank": 33,
-    "": ""
+    "Life_expectancy_rank": 33
   },
   {
     "ID": 503,
@@ -6836,7 +6782,6 @@
     "Premature_Mort": 151.6,
     "Premature_mort_rank": 35,
     "Life_expectancy_rate": 81.0,
-    "Life_expectancy_rank": 29,
-    "": ""
+    "Life_expectancy_rank": 29
   }
 ]

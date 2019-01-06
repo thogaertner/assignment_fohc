@@ -18,9 +18,8 @@ class VariableBar extends Component {
         const coloredData = this.colorData();
 
         return <div>
-            {this.displaySelection}
+            {this.displaySelection.replace('_', ' ')}
             <BarChart 
-                axisLabels={{x: '', y: 'in %'}}
                 axes
                 grid
                 y2Type={'linear'}

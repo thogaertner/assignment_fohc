@@ -7,7 +7,7 @@ import NYMap from './NYMap.jsx';
 import Diagrams from './Diagrams';
 import DropDown from './DropDown';
 
-const DATA = cphComplete.map(cphDistrict => {
+const DATA = cphComplete || cphComplete.map(cphDistrict => {
   const match = nonAdjustedCHS.find(naCHSDistrict => cphDistrict.ID === naCHSDistrict.ID);
   if(!match) return cphDistrict;
   return { ...cphDistrict, ...match };
@@ -15,8 +15,8 @@ const DATA = cphComplete.map(cphDistrict => {
 
 class App extends Component {
   state = {
-    width: 900,
-    height: 900,
+    mapWidth: 600,
+    mapHeight: 600,
     id: 'root',
     selected: [],
     displaySelection: 'OverallPopulation_rate',
@@ -27,22 +27,22 @@ class App extends Component {
     return (
       <div className="App">
         <Grid>
-          <Row>
-            <Col md={6} mdOffset={6}>
-              <DropDown
-                data={DATA}
-                setDisplaySelection={this.setDisplaySelection.bind(this)}/>
-            </Col>
-          </Row> 
           <Row>            
-            <Col md={12}>
+            <Col mdOffset={3} md={6}>
             <NYMap
-              size={[this.state.width, this.state.height]}
+              size={[this.state.mapWidth, this.state.mapHeight]}
               triggerSelected={this.triggerSelected.bind(this)}
               data={DATA}
               displaySelection={this.state.displaySelection}/>
             </Col>
           </Row>
+          <Row>
+            <Col md={3} mdOffset={9}>
+              <DropDown
+                data={DATA}
+                setDisplaySelection={this.setDisplaySelection.bind(this)}/>
+            </Col>
+          </Row> 
           <Row>         
             <Diagrams 
               selected={this.state.selected}
