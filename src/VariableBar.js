@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { rgba } from 'polished';
 import { BarChart } from 'react-easy-chart';
 import './App.css';
+import { getColorById } from './utils';
 
 
 class VariableBar extends Component {
@@ -18,7 +19,9 @@ class VariableBar extends Component {
         const coloredData = this.colorData();
 
         return <div>
-            {this.displaySelection.replace('_', ' ')}
+            {this.displaySelection.split('_')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ')}
             <BarChart 
                 axes
                 grid
@@ -45,7 +48,8 @@ class VariableBar extends Component {
     colorData() {
         return this.transformedData[this.displaySelection].map(date => {
             return this.selected.indexOf(date.id) === -1 ? 
-                date : { ...date, color: 'orange', text: 'asdasd' };
+                { ...date, color:'gray' } : 
+                { ...date, color: getColorById(date.id) };
         })
     }
 }

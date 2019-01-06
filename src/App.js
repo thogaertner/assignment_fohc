@@ -23,7 +23,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('render')
     return (
       <div className="App">
         <Grid>
