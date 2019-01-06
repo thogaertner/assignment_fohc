@@ -16,7 +16,13 @@ class DropDown extends Component {
 
         const options = Object.keys(this.data[0])
             .filter(key => ['ID', 'Name'].indexOf(key) === -1)
-            .map(key => <option value={key}>{key}</option>)
+            .map(key => <option
+                key={key}
+                value={key}>
+                    {key.split('_')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                            .join(' ')}
+                </option>)
 
         return <select 
             id="dropDownId"

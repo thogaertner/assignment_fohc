@@ -234,11 +234,6 @@ class Diagrams extends Component {
                 selected={selected}
                 displaySelection={'Life_expectancy_rate'}/>
             </Col>
-            
-           
-            {/*<AmBarChart
-                data={data}
-            selected={selected}/>*/}
         </div>
     }
 }

@@ -31,7 +31,8 @@ class NYMap extends Component {
 
         const districts = districtData
             .map((districtDate, i) =>
-                <District
+                <District 
+                    key={'district' + i}
                     pathGenerator={pathGenerator}
                     id={i}
                     districtDate={districtDate}

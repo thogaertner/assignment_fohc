@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './App.css';
 import cphComplete from './data/cph_complete.json'
-import nonAdjustedCHS from './data/non_adjusted_CHS.json'
+// import nonAdjustedCHS from './data/non_adjusted_CHS.json'
 import NYMap from './NYMap.jsx';
 import Diagrams from './Diagrams';
 import DropDown from './DropDown';
 
-const DATA = cphComplete || cphComplete.map(cphDistrict => {
+const DATA = cphComplete /*|| cphComplete.map(cphDistrict => {
   const match = nonAdjustedCHS.find(naCHSDistrict => cphDistrict.ID === naCHSDistrict.ID);
   if(!match) return cphDistrict;
   return { ...cphDistrict, ...match };
-})
+})*/
 
 class App extends Component {
   state = {
@@ -29,6 +29,7 @@ class App extends Component {
           <Row>            
             <Col mdOffset={3} md={6}>
             <NYMap
+              key={'NYMap'}
               size={[this.state.mapWidth, this.state.mapHeight]}
               triggerSelected={this.triggerSelected.bind(this)}
               data={DATA}

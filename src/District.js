@@ -31,7 +31,7 @@ class District extends Component {
                     this.props.triggerSelected(districtDate.properties.communityDistrict)
                     }}
             >
-                    <title>{this.getTitle()}</title>
+                    <title key={'title'+districtDate.id}>{this.getTitle()}</title>
             </path>
     }
 
