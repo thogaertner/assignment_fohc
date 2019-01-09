@@ -10,7 +10,7 @@ class Diagrams extends Component {
         const selected = this.props.selected;
         const displaySelection = this.props.displaySelection;
         return <div>
-            <Col md={12}>
+            <Col xs={12} sm={12} md={12}>
                 <VariableAmBarChart
                     data={data}
                     selected={selected}

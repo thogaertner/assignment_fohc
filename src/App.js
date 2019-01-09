@@ -15,8 +15,8 @@ const DATA = cphComplete /*|| cphComplete.map(cphDistrict => {
 
 class App extends Component {
   state = {
-    mapWidth: 600,
-    mapHeight: 600,
+    mapWidth: Math.min(600, window.screen.width),
+    mapHeight: Math.min(600, window.screen.width),
     id: 'root',
     selected: [],
     displaySelection: 'OverallPopulation_rate',
@@ -28,7 +28,7 @@ class App extends Component {
         <Grid>
           <Row>
             <h1 align="center">New York Public Health Visualization</h1>
-            <Col mdOffset={3} md={6}>
+            <Col xs={12} sm={12} mdOffset={3} md={6}>
               <NYMap
               key={'NYMap'}
               size={[this.state.mapWidth, this.state.mapHeight]}
@@ -38,7 +38,7 @@ class App extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={3} mdOffset={9}>
+            <Col xs={6} xsOffset={6} sm={9} smOffset={3} md={3} mdOffset={9}>
               <DropDown
                 data={DATA}
                 setDisplaySelection={this.setDisplaySelection.bind(this)}/>

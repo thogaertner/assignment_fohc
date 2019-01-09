@@ -5,7 +5,7 @@ import { geoMercator, geoPath } from 'd3-geo'
 import District from './District';
 
 const COORDINATED_NEW_YORK = [-74.0060,40.7128];
-const SCALE = 50000;
+const SCALE = 50000/600;
 
 class NYMap extends Component {
     state = {
@@ -20,7 +20,7 @@ class NYMap extends Component {
         this.data = this.props.data;
         const displaySelection = this.props.displaySelection;
         const projection = geoMercator()
-            .scale(SCALE)
+            .scale(SCALE*this.props.size[0])
             .center(COORDINATED_NEW_YORK)
             .translate([this.props.size[0] / 2, this.props.size[1] / 2]);
 
