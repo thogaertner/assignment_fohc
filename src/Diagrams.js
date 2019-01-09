@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import './App.css';
-import HousingDefectDiagram from './HousingDefectDiagram';
-import AmBarChart from './AmBarChart'
-import VariableBar2 from './VariableBar_2';
+import VariableAmBarChart from './VariableAmBarChart';
 import VariableBar from './VariableBar';
 
 class Diagrams extends Component {
@@ -13,7 +11,7 @@ class Diagrams extends Component {
         const displaySelection = this.props.displaySelection;
         return <div>
             <Col md={12}>
-                <VariableBar2
+                <VariableAmBarChart
                     data={data}
                     selected={selected}
                     displaySelection={displaySelection}/>

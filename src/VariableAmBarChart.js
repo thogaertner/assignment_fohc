@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import { rgba } from 'polished';
-import { BarChart } from 'react-easy-chart';
 import './App.css';
 import { getColorById } from './utils';
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 
 
-class VariableBar2 extends Component {
+class VariableAmBarChart extends Component {
     state = {}
     transformedData = {};
     selected;
@@ -17,12 +15,13 @@ class VariableBar2 extends Component {
         chart.scrollbarX = new am4core.Scrollbar();
 
         // Add data
-        chart.data = this.data;
+        chart.data = this.transformedData;
 
         // Create axes
 
         let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-        categoryAxis.dataFields.category = "Name";
+        categoryAxis.dataFields.category = "x";
+        categoryAxis.sortChildren();
         categoryAxis.renderer.grid.template.location = 0;
         categoryAxis.renderer.minGridDistance = 30;
         categoryAxis.renderer.labels.template.horizontalCenter = "right";
@@ -35,8 +34,8 @@ class VariableBar2 extends Component {
 
         // Create series
         let series = chart.series.push(new am4charts.ColumnSeries());
-        series.dataFields.valueY = this.displaySelection;
-        series.dataFields.categoryX = "Name";
+        series.dataFields.valueY = "y";
+        series.dataFields.categoryX = "x";
         series.name = this.displaySelection;
         series.columns.template.tooltipText = "{categoryX}: [bold]{valueY}[/]";
         series.columns.template.fillOpacity = .8;
@@ -54,7 +53,7 @@ class VariableBar2 extends Component {
         hoverState.properties.fillOpacity = 1;
 
         series.columns.template.adapter.add("fill", (fill, target)=>{
-            return this.colorData(this.data[target.dataItem.index].ID);
+            return this.colorData(this.transformedData[target.dataItem.index].id);
        })
 
         this.chart = chart;
@@ -74,6 +73,8 @@ class VariableBar2 extends Component {
         this.selected = this.props.selected;
         this.displaySelection = this.props.displaySelection;
 
+        this.transformedData = this.transformData();
+
         if (this.chart) {
             this.componentDidMount();
         }
@@ -82,7 +83,7 @@ class VariableBar2 extends Component {
             {this.displaySelection.split('_')
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                 .join(' ')}
-            <div id="displaySelection" style={{ width: "800", height: "500px" }}></div>
+            <div id="displaySelection" style={{ width: "100%", height: "500px" }}></div>
         </div>
     }
 
@@ -98,9 +99,9 @@ class VariableBar2 extends Component {
 
         this.transformedData[this.displaySelection] = this.data.map(date => {
             return {
-                x: date['Name'],
-                y: date[this.displaySelection],
-                id: date['ID']
+                "x": date['Name'],
+                "y": date[this.displaySelection],
+                "id": date['ID']
             }
         })
         this.transformedData[this.displaySelection].sort((a, b) => a.y-b.y)
@@ -110,4 +111,4 @@ class VariableBar2 extends Component {
 
 
 }
-export default VariableBar2;
+export default VariableAmBarChart;
