@@ -18,10 +18,11 @@ class VariableBar extends Component {
 
         const coloredData = this.colorData();
 
-        return <div>
+        return <div align="center"><h3>
             {this.displaySelection.split('_')
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                 .join(' ')}
+        </h3>
             <BarChart 
                 axes
                 grid

@@ -76,13 +76,16 @@ class VariableAmBarChart extends Component {
         this.transformedData = this.transformData();
 
         if (this.chart) {
-            this.componentDidMount();
+            // Add data
+            this.chart.data = this.transformedData;
+            this.chart.invalidateData();
         }
 
-        return <div>
+        return <div align="center"><h2>
             {this.displaySelection.split('_')
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                 .join(' ')}
+        </h2>
             <div id="displaySelection" style={{ width: "100%", height: "500px" }}></div>
         </div>
     }

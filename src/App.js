@@ -26,9 +26,10 @@ class App extends Component {
     return (
       <div className="App">
         <Grid>
-          <Row>            
+          <Row>
+            <h1 align="center">New York Public Health Visualization</h1>
             <Col mdOffset={3} md={6}>
-            <NYMap
+              <NYMap
               key={'NYMap'}
               size={[this.state.mapWidth, this.state.mapHeight]}
               triggerSelected={this.triggerSelected.bind(this)}
