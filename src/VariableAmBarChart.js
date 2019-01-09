@@ -76,7 +76,7 @@ class VariableAmBarChart extends Component {
         this.transformedData = this.transformData();
 
         if (this.chart) {
-            this.componentDidMount();
+            this.chart.invalidateData();
         }
 
         return <div>
